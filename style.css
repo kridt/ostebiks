@@ -3,3 +3,58 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #ffffe6;
+}
+
+#wrapper{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+li{
+    list-style: none;
+}
+
+.title{
+    font-size: 2em;
+}
+
+li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 3em;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 27em;
+}
+
+.showCase>h2{
+    text-align: center;
+    margin-top: 5em;
+}
+
+.osteListe{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 50px;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.findOs{
+    text-align: center;
+    margin-top: 7em;
+}
+.findOs h1{
+    margin-bottom: 1em;
+}
+
+footer{
+    background-color: #c9bc00;
+}
+
