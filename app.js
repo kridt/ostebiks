@@ -80,7 +80,7 @@ if(localStorage.getItem("cart") == null){
 setTimeout(function(){ 
     
 
-    
+     
     
     function cart(){
         var count = localStorage.getItem("cart");
