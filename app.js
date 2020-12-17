@@ -72,33 +72,41 @@ form.addEventListener("submit", function (event) {
     if (!success) return
 });
 
-
-function cart(){
-    var count = localStorage.getItem("cart");
-    var cartNum = document.querySelector(".cartNumber");
-    var addToCart = document.querySelector(".addToCart");
-    
-    cartNum.innerHTML = localStorage.getItem("cart")
-
-    if (localStorage.getItem("")) {
-        count = 0;
-    }
-
-    window.addEventListener("click", function(){
-        count++;
-        cartNum.innerHTML=count;
-        
-        localStorage.setItem("cart", count);
-
-    })
-    
-    /* 
-    
-    addToCart.addEventListener("click", function(event){
-        /* localStorage.setItem("cart" +1) 
-        console.log(addToCart);
-    }) 
-    */
+if(localStorage.getItem("cart") == null){
+    localStorage.setItem("cart", 0)
 }
 
-cart()
+
+setTimeout(function(){ 
+    
+
+    
+    
+    function cart(){
+        var count = localStorage.getItem("cart");
+        var cartNum = document.querySelector(".cartNumber");
+        var addToCart = document.querySelectorAll(".addToCart");
+        
+        cartNum.innerHTML = localStorage.getItem("cart")
+        addToCart.forEach(buttons => {
+            
+            buttons.addEventListener("click", function(){
+                count++;
+                cartNum.innerHTML=count;
+                
+                localStorage.setItem("cart", count);
+                
+            })
+        });
+        
+        
+        
+        
+        
+        
+    }
+    cart()
+    
+}, 500);
+    
+    
