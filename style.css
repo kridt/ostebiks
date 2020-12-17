@@ -15,10 +15,18 @@ body{
 
 li{
     list-style: none;
+    align-self: center;
 }
 
 .title{
     font-size: 2em;
+}
+
+.cartNumber{
+    color: white;
+    position: relative;
+    right: 1.14em;
+    bottom: .6em;
 }
 
 li a{
@@ -30,7 +38,7 @@ li a{
 ul{
     display: flex;
     justify-content: space-between;
-    margin-right: 27em;
+    margin-right: 10em;
 }
 
 .showCase>h2{
@@ -56,5 +64,37 @@ ul{
 
 footer{
     background-color: #c9bc00;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20em;
 }
 
+.kontakt{
+    padding-top: 2em;
+}
+
+p>a{
+    color: #000;
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 1em;
+}
+input{
+    margin-bottom: 1em;
+}
+.statusMessage{
+    color: red;
+}
+.formDel{
+    margin-top: 2em;
+}
+
+#form__submit{
+    margin-top: 1em;
+    width: 100px
+}
