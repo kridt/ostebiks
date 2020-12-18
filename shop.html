@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christians Ostebiks</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/cs/releases/v5.0.6/css/all.css" rel="stylesheet"><link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">    <body>
+    <div id="wrapper">
+    <header>
+        <nav>
+            <ul>
+                <li class="title">Christians Ostebiks</li>
+                <li><a href="/index.html">Forside</a></li>
+                <li><a href="/shop.html">Shop</a></li>
+                <li><i class="fas fa-shopping-cart fa-2x icon"></i><span class="cartNumber"></span></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <main>
+        <h2 id="allCheeses">Her er alle vores oste</h2>
+        <article class="alleOste"></article>
+    </main>
+
+</div>
+    <footer>
+        <div class="kontakt">
+            <h2>Kontakt</h2>
+            <p>Ring til os på <a href="tel:39142000">39 14 20 00</a></p>
+        </div>
+        <div class="formDel"> 
+            <h2>Har du spørgsmål?</h2>
+           
+
+                <form action="index.html" class="contact__form" novalidate>
+
+                    
+                    <span class="statusMessage fullname"></span>
+                    <input class="input__form" type="text" name="fullname" id="fullname" placeholder="Fornavn" required>
+
+
+
+                    
+                    <span class="statusMessage email statusMessageEmail"></span>
+                    <input class="input__form" type="email" name="email" id="email" placeholder="Email" required>
+
+
+
+                    <span class="statusMessage msg"></span>
+                    <textarea class="input__form" name="msg" id="msg" cols="30" rows="10" required placeholder="Hvad er dit spørgsmål?" ></textarea>
+
+
+
+                    <button id="form__submit" type="submit">Send!</button>
+                </form>
+                
+            
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html> 

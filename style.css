@@ -98,3 +98,16 @@ input{
     margin-top: 1em;
     width: 100px
 }
+.alleOste{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 2em;
+    margin-bottom: 2em;
+    margin-left: 10%;
+}
+
+#allCheeses{
+    text-align: center;
+    margin: 2em 0;
+}

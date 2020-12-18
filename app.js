@@ -20,8 +20,8 @@ fetch(`http://localhost:3000/api/v1/cheeses?offset=${randomTal}`)
         `
         osteListe.appendChild(osteList)
     });
+    
 });
-
 
 let form = document.querySelector(".contact__form")
 let inputFields = document.querySelectorAll(".input__form");
@@ -109,4 +109,30 @@ setTimeout(function(){
     
 }, 500);
     
+
+
+
+fetch(`http://localhost:3000/api/v1/cheeses?limit=100000`)
+.then(response => response.json())
+.then(function (data){
+    
+
+    var ost = data.results 
+    var osteListe = document.querySelector(".alleOste");
+    
+
+    ost.forEach(oste => {
+        const osteList = document.createElement(`div`)
+        osteList.classList.add(`ostCard`)
+        osteList.innerHTML = `
+        <img src="https://via.placeholder.com/150x200">
+        <h3 class="ostNavn">${oste.name}</h3>
+        <p>${oste.strength}</p>
+        <p class="ostPris">${oste.price.$numberDecimal} kr</p>
+        <button class="addToCart">Læg i kurv</button>
+        `
+        osteListe.appendChild(osteList)
+    });
+});
+
     
